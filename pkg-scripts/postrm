@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$1" = "purge" ]
+then
+  rm -rf /etc/consul
+  userdel consul
+fi
+
+exit 0

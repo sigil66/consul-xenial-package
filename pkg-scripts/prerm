@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+if [ $(systemctl is-active consul) == 'active' ]; then
+  systemctl stop consul
+fi
+
+if [ "$1" = "purge" ]
+then
+  systemctl disable consul
+fi
+
+exit 0
