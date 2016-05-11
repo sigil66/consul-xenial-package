@@ -48,7 +48,7 @@ task :pkg do
               -n #{NAME} \
               -v #{VERSION} \
               --description "#{DESCRIPTION}" \
-              -a all \
+              -a amd64 \
               --deb-user root \
               --deb-group root \
               --after-install ./pkg-scripts/postinst \
