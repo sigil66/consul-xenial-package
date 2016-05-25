@@ -19,8 +19,8 @@ end
 desc 'Clean'
 task :clean do
   sh %{ rm -rf *.zip }
-  sh %{ rm -rf ./build }
-  sh %{ rm -rf ./pkg }
+  sh %{ rm -rf #{BUILD_DIR} }
+  sh %{ rm -rf #{OUT_DIR} }
 end
 
 desc 'Fetch Binary'
