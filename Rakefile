@@ -1,9 +1,9 @@
-NAME='consul'
-DESCRIPTION='HashiCorp Consul'
-VERSION='0.6.4'
-BUILD_DIR='./build'
-OUT_DIR='./pkg'
-PREFIX='/usr/bin'
+NAME = 'consul'
+DESCRIPTION = 'HashiCorp Consul'
+VERSION = '0.6.4'
+BUILD_DIR = './build'
+OUT_DIR = './pkg'
+PREFIX = '/usr/bin'
 
 # Setup RUBY ENV
 ENV['PATH'] =  "#{Dir.pwd}/.gems/bin:#{ENV['PATH']}"
